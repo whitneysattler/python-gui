@@ -19,7 +19,7 @@ class dragCircles:
         self.canvas.tag_bind("circle", "<B1-Motion>", self.dragCircle)
         self.canvas.tag_bind("circle", "<Double-Button-1>", self.doubleClick)
 
-        window.mainloop
+        window.mainloop()
 
     def dragCircle(self, event):
         deltaX = event.x - self.oldX
